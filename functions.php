@@ -14,12 +14,6 @@
 // Load Kirki
 include( get_template_directory() . '/functions/kirki/kirki.php' );
 
-// Load theme updater functions
-function noteblock_theme_updater() {
-	require( get_template_directory() . '/functions/updater/theme-updater.php' );
-}
-add_action( 'after_setup_theme', 'noteblock_theme_updater' );
-
 if ( ! function_exists( 'noteblock_load' ) ) {
 	
 	function noteblock_load() {
