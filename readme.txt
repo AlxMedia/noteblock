@@ -72,6 +72,9 @@ Content images
 
 == Changelog ==
 
+= 1.0.9 - 2021-05-17 =
+* Fixed: more visible focus state of burger button and mobile menu dropdowns
+
 = 1.0.8 - 2021-03-08 =
 * Removed premium theme updater code
 * Updated language files

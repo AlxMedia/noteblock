@@ -1,7 +1,7 @@
 /*
 Theme Name: Noteblock
 Theme URI: http://alx.media/themes/noteblock/
-Version: 1.0.8
+Version: 1.0.9
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 5.6
@@ -794,6 +794,9 @@ body { background: #100e17; }
 .nav-menu.mobile.toggled > div > ul.menu ul.sub-menu { visibility: hidden; transition: all 0.3s ease; }
 .nav-menu.mobile.toggled > div > ul.menu,
 .nav-menu.mobile.toggled > div > ul.menu ul.sub-menu.active { visibility: visible; }
+.nav-menu.mobile button:focus,
+.menu-toggle:focus { background: rgba(255,255,255,0.07); }
+.menu-toggle:focus { border-radius: 30px; }
 
 /* menu styling */
 .nav-menu a { color: #fff; }
