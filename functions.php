@@ -92,8 +92,10 @@ add_action( 'after_setup_theme', 'noteblock_setup' );
 
 /*  Custom navigation
 /* ------------------------------------ */
-add_action( 'wp', function() {
+if ( ! class_exists( '\Noteblock\Nav' ) ) {
 	require_once 'functions/nav.php';
+}
+add_action( 'wp', function() {
 	$nav = new \Noteblock\Nav();
 	$nav->enqueue(
 		[
